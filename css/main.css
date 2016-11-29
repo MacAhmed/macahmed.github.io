@@ -52,6 +52,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.borderbtm{
+    border-bottom: solid 2px #cb4b16;
+}
+
 .contactinfo{
     text-align: right;
     background-color: #eee8d5;
