@@ -52,6 +52,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 .borderbtm{
     border-bottom: solid 2px #cb4b16;
 }
@@ -71,4 +73,17 @@
     text-transform: uppercase;
     line-height: 1.2;
     margin-bottom: 0px;
+}
+
+.headingBorder{
+    padding: 20px;
+    background-color: #cb4b16;
+    color: white;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border-color: #cb4b16;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 40px;
+    text-align: center;
 }
