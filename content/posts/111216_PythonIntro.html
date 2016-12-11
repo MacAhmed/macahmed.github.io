@@ -1,0 +1,87 @@
+<div class="borderbtm">
+    <div class="row">
+        <div>
+            <h3 class="postHeading">Google - Intro to Python</h3>
+            <div class="row">
+                    <code class="u-pull-right">
+                        11 Dec 2016
+                    </code>
+            </div>
+            <br>
+            <p>
+                I have just started doing the Python course by Google. I am also using a book called Python Programming -
+                An introduction to Computer Science by John Zelle as a supplement to learn more.
+            </p>
+            <p>
+                Python is a dynamic, interpreted ( byte-code compiled ) language. A dynamic language is one that performs
+                many tasks during runtime that are normally performed by static languages during compilation. These kind
+                languages are often referred to as scripting languages. An interpreted language is one whose instructions
+                are executed directly, without previous compilation. However, Python is not strictly a interpreted language.
+                It creates an Intermediate Representation, a data structure or code used internally by a VM or a compiler
+                which represents the source code. The IR is then compiled everytime there is some sort of change in the
+                source code.
+            </p>
+            <p>
+                There are no type declarations for variables, parameters, functions etc. The source files using .py as a
+                file extension and are called modules.
+            </p>
+
+            <pre><code>import sys
+def main():
+    print 'Hello there,', sys.argv[1]
+if __name__ == '__main__':
+    main()</code></pre>
+
+            <p>
+                The above code is simple program that will print out 'Hello there,' followed by the 2nd command line argument.
+                <code>import sys</code> imports a library module called sys which provides standard system-related functions.
+                <code>def</code> is the keyword used to define functions and is followed by the name of the functions and then
+                colon. This is then followed by the standard print statement. <code>sys.argv[1]</code> allows access to the
+                second element in the array <code>argv</code>. The 1st element of the argv array is the name of the program.
+            </p>
+
+            <p>
+                The <code>if __name__ == '__main__'</code> is a standard boilerplate code used to indicate which function
+                must be called first. It states if the the filename is 'main' then run the main function. The actions taken
+                such as running the main functions can be replaced with anything as it long they have been defined beforehand.
+            </p>
+
+            <p>
+                When a module is run directly either from the command-line or some GUI element, its important to have the
+                <code>if __name__ == '__main__'</code> block, to indicate what functions will start the program.
+            </p>
+
+            <pre><code>def repeat(s, exclaim):
+    result = s + s + s
+    if exclaim:
+        result = result + '!!!'
+return result</code></pre>
+
+        </div>
+
+        <p>
+            The above is anther simple function that repeats a certain string 3 times, and add 3 exclamations depending
+            upon parameters provided. The function is first defined using <code>def repeat(s, exclaim)</code>, where def
+            is followed by the name of the function, and then its parameters in brackets. <code>result = s + s + s</code>
+            adds 3 instances of the strings and therefore repeats it 3 times. A faster way to perform this is by doing
+            <code>s*3</code>, which is faster as the length of the string is only calculated once, while it is calculated
+            each time its added during  <code>s + s + s</code>. <code>if exclaim:</code> where exclaim is either <code>
+            True</code> or <code>False</code> is a statement that decides whether or not exclamation points are to be
+            included. The variable <code>result</code> is then returned by the method calling the function.
+        </p>
+
+        <p>
+            Python is a little different from languages in sense that whitespace indentation affects how a program is
+            interpreted. A logical block of statements such as a if statement, a function, loop etc should have the
+            same indentation. Python Official Style Guide reccomends use of 4 space indentation but it can be 2 spaces as
+            well as long as it is consistent.
+        </p>
+
+        <p>
+            All type, name etc chekcs are performed at runtime, on each line as it runs. This means that more rigorous
+            testing is required to ensure all possible branches of the program are free of errors. One might miss an error
+            under a if statemetn if that statement is not explored during testing.
+        </p>
+
+    </div>
+</div>

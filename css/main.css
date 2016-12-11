@@ -66,3 +66,9 @@
     border-width: 1px;
     border-style: solid;
 }
+
+.postHeading{
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
