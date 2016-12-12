@@ -1,0 +1,83 @@
+<div class="borderbtm">
+    <div class="row">
+        <div>
+            <div class="headingBorder">
+                <h3 class="postHeading">Google - Python Strings</h3>
+            </div>
+            <div class="row">
+                    <code class="u-pull-right">
+                        12 Dec 2016
+                    </code>
+            </div>
+            <br>
+            <p>
+                Strings are a sequence of characters and are found in almost every language. They are mostly used
+                to represent textual information. Python allows you to create a string literal using <code>"</code>
+                and <code>'</code>. However, the delimiter must be the same set. So, for example : <code>"Mac"</code>
+                and <code>'Mac'</code> are both viable strings while <code>'Mac"</code> or <code>"Mac'</code>
+                are not.
+            </p>
+
+            <p>
+                The strings acts similar to array where each character can be accessed using an index. Indexing of a
+                string starts from 0 to <code>length(string)</code>. The general form to access a character of a string
+                is &lt;string&gt;[&lt;expr&gt;]. For Example :
+            <pre><code>greet = "Mac"
+greet[0] = 'M'
+greet[2-1] = "a"
+</code></pre>
+            </p>
+
+            <p>
+                A substring can be accessed using the slicing operation. so, <code>greet[0:3] = 'Hel'</code> therefore,
+                generally, &lt;string&gt;[&lt;start&gt;:&lt;end&gt;]. + can be used to concatenate strings while * can be
+                used to multiply the string out.
+            </p>
+
+            <p>
+                For Example, if <code>s = "string"</code> then <code>s = s + s = "stringstring"</code>, and
+                <code>s = 3*s = "stringstringstring"</code>.
+            </p>
+
+            <p>
+                There are some common methods in the Python libraries for string manipulation.
+            </p>
+            <div class="row">
+                <div class="columns five post2border">
+                    s.capitalize()<br><br>
+                    s.center(width)<br><br>
+                    s.count(sub)<br><br>
+                    s.find(sub)<br>
+                    s.join(list)<br><br>
+                    s.ljust(width)<br>
+                    s.lower()<br>
+                    s.lstrip()<br>
+                    s.replace(oldsub, newsub)<br>
+                    s.rfind(sub)<br>
+                    s.rjust(width)<br>
+                    s.rstrip()<br>
+                    s.split()<br>
+                    s.title()<br><br>
+                    s.upper()<br>
+                </div>
+                <div class="columns seven">
+                    returns copy of s with only the first character capitalized<br>
+                    returns copy of s centered in a field of a given width<br>
+                    returns the number of occurrences of sub in s<br><br>
+                    find the first position where sub occurs in s<br>
+                    Concatenate list into a string, using s as separator<br>
+                    Like, center but s is left-justified<br>
+                    Copy of s in all lowercase character<br>
+                    Copy of s with leading whitespace removed<br>
+                    Replace all occurence of oldsub with newsub<br>
+                    Like find, but returns the rightmost position<br>
+                    Like center, but s is right-justified.<br>
+                    Copy of s with trailing whitespace removed<br>
+                    Split s into a list of substrings<br>
+                    Copy of s with first character of each word capitalised<br>
+                    Copy of s with all character converetd to uppercase<br>
+                </div>
+            </div>
+            <br>
+    </div>
+</div>
