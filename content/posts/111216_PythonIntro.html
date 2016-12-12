@@ -75,14 +75,25 @@ return result</code></pre>
         <p>
             Python is a little different from languages in sense that whitespace indentation affects how a program is
             interpreted. A logical block of statements such as a if statement, a function, loop etc should have the
-            same indentation. Python Official Style Guide reccomends use of 4 space indentation but it can be 2 spaces as
+            same indentation. Python Official Style Guide recommends use of 4 space indentation but it can be 2 spaces as
             well as long as it is consistent.
         </p>
 
         <p>
-            All type, name etc chekcs are performed at runtime, on each line as it runs. This means that more rigorous
+            All type, name etc checks are performed at runtime, on each line as it runs. This means that more rigorous
             testing is required to ensure all possible branches of the program are free of errors. One might miss an error
-            under a if statemetn if that statement is not explored during testing.
+            under a if statement if that statement is not explored during testing.
+        </p>
+
+        <p>
+            Suppose a module is called <code>module1</code> and has a method called <code>method1</code>, then its fully
+            qualified name is <code>module1.method1</code>. The modules can be imported using the <code>import</code> statement
+            and then their methods can be used by using their complete name. There are two ways to import resources in Python.
+            One, simply using a <code>import</code> statement, and indicating which module is required. Second, is like
+            <code>from sys import argv,exit</code>, which imports two resources from the module sys called argv and exit().
+            These can then be used in the module without being referred to by their complete name. This is however, not
+            encouraged. Some of the common library modules are sys, re, os etc. The <code>help()</code> statement can be
+            used to pull up documentation strings for methods, modules etc.
         </p>
 
     </div>
