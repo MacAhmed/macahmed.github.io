@@ -43,40 +43,52 @@ greet[2-1] = "a"
                 There are some common methods in the Python libraries for string manipulation.
             </p>
             <div class="row">
-                <div class="columns five post2border">
-                    s.capitalize()<br><br>
-                    s.center(width)<br><br>
-                    s.count(sub)<br><br>
-                    s.find(sub)<br>
-                    s.join(list)<br><br>
-                    s.ljust(width)<br>
-                    s.lower()<br>
-                    s.lstrip()<br>
-                    s.replace(oldsub, newsub)<br>
-                    s.rfind(sub)<br>
-                    s.rjust(width)<br>
-                    s.rstrip()<br>
-                    s.split()<br>
-                    s.title()<br><br>
-                    s.upper()<br>
-                </div>
-                <div class="columns seven">
-                    returns copy of s with only the first character capitalized<br>
-                    returns copy of s centered in a field of a given width<br>
-                    returns the number of occurrences of sub in s<br><br>
-                    find the first position where sub occurs in s<br>
-                    Concatenate list into a string, using s as separator<br>
-                    Like, center but s is left-justified<br>
-                    Copy of s in all lowercase character<br>
-                    Copy of s with leading whitespace removed<br>
-                    Replace all occurence of oldsub with newsub<br>
-                    Like find, but returns the rightmost position<br>
-                    Like center, but s is right-justified.<br>
-                    Copy of s with trailing whitespace removed<br>
-                    Split s into a list of substrings<br>
-                    Copy of s with first character of each word capitalised<br>
-                    Copy of s with all character converetd to uppercase<br>
-                </div>
+                <table class="u-full-width">
+                    <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><code>s.lower() , s.upper()</code></td>
+                        <td>returns the lowercase or uppercase version of the string.</td>
+                    </tr>
+                    <tr>
+                        <td><code>s.strip()</code></td>
+                        <td>returns a string with whitespace removed from start and end</td>
+                    </tr>
+                    <tr>
+                        <td><code>s.isalpha() / s.isdigit() / s.isspace()</code></td>
+                        <td>tests if all the string chars in the various character classes</td>
+                    </tr>
+                    <tr>
+                        <td><code>s.startswith('other'), s.endswith('other')</code></td>
+                        <td>tests if the string starts or ends with a certain string</td>
+                    </tr>
+                    <tr>
+                        <td><code>s.find('other')</code></td>
+                        <td>searches for the given other string ( not a regex ), and returns the index where it starts</td>
+                    </tr>
+                    <tr>
+                        <td><code>s.replace('old', 'new')</code></td>
+                        <td>returns a string where all occurneces of 'old' have been replaced with 'new'</td>
+                    </tr>
+                    <tr>
+                        <td><code>s.split('delim')</code></td>
+                        <td>returns substrings separated with the given delimiter ( not a regex ). The <code>s.split</code>
+                        without arguments splits on whitespace.</td>
+                    </tr>
+                    <tr>
+                        <td><code>s.join(list)</code></td>
+                        <td>opposite of split, and joins the list into a string using a delimiter.</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p>More methods can be found on <a href="https://docs.python.org/3/library/stdtypes.html#string-methods"> python.org string methods</a> </p>
+
             </div>
             <br>
     </div>
