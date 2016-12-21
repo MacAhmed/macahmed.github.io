@@ -2,8 +2,8 @@ $(document).ready(function() {
     var geocodeAPIKey =  "AIzaSyCpNp17X-PT49cZa5EgwMdLPGlbxq3dNGA";
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function(position) {
-            //var URL = "http://api.openweathermap.org/data/2.5/forecast/daily?q=Quebec&mode=json&units=metric&appid=38f8e89e9485cf8789e47dd969657941"
-            var URL = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&appid=38f8e89e9485cf8789e47dd969657941";
+            //var URL = "https://api.openweathermap.org/data/2.5/forecast/daily?q=Quebec&mode=json&units=metric&appid=38f8e89e9485cf8789e47dd969657941"
+            var URL = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&appid=38f8e89e9485cf8789e47dd969657941";
             var city = getAPIData(URL);
             var amount = city.cnt;
             var date = new Date();
