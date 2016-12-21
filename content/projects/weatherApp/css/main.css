@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar:600');
+@import url('http://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Domine');
+
+
+.iconWeather{
+    font-size: 100px;
+    text-align: center;
+    background-color: #046380;
+    padding: 40px;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    border: #002F2F solid 5px;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    color: #EFECCA;
+
+}
+
+.verticalcenter{
+    padding: 14% 0;
+}
+
+body{
+    background-color: #002F2F;
+}
+
+.dayName {
+    font-family: Montserrat, Arial Black, sans-serif;
+    font-size: 30px;
+    color: #EFECCA;
+}
+
+.temp {
+    font-family: 'Eczar', serif;
+    font-size: 50px;
+}
+
+
+.css3D {
+    margin: 0;
+    font-size: 2.5vw;
+    padding: 0.5rem;
+    color: #EFECCA;
+    font-family: Montserrat, Arial Black, sans-serif;
+    text-align: center;
+    text-shadow: 0 .01em 0 #A7A37E,
+    0 .02em 0 #A7A37E,
+    0 .03em 0 #A7A37E,
+    0 .04em 0 #A7A37E,
+    0 .05em 0 #A7A37E,
+    0 .06em 0 #A7A37E,
+    0 .07em 0 #A7A37E,
+    0 .08em 0 #A7A37E,
+    0 .09em 0 #A7A37E,
+    0 .10em 0 #A7A37E,
+    0 .06em .02em rgba(104, 104, 92, 0.2),
+    0 -.02em .03em rgba(104, 104, 92, 0.17),
+    -.02em .10em .02em rgba(104, 104, 92, 0.15),
+    -.08em .10em .06em rgba(104, 104, 92, 0.15);
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -o-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    -webkit-hyphenate-character: "\2010";
+}
+
+.statusWeather{
+    font-family: 'Domine', serif;
+    font-size: 30px;
+}
