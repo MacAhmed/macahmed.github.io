@@ -17,7 +17,12 @@ $(document).ready(function() {
                 var statusElement = document.getElementById( "status" + count);
                 var icon = document.getElementById( "icon" + count );
 
+                if ( dayDate > 6){
+                    dayDate = dayDate - 7;
+                }
                 dayElement.innerHTML = dayOfWeekAsString( dayDate );
+                console.log( dayDate );
+                console.log( dayOfWeekAsString( dayDate ) );
                 dayDate = dayDate + 1;
                 element.innerHTML = Math.round(city.list[count-1].temp.max) + "&#x2103;";
                 statusElement.innerHTML = city.list[count-1].weather[0].main ;

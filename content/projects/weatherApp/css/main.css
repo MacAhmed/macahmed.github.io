@@ -13,7 +13,7 @@
     -moz-border-radius: 15px;
     border-radius: 15px;
 
-    border: #002F2F solid 5px;
+    border: #EFECCA solid 5px;
 
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -28,7 +28,7 @@
 }
 
 body{
-    background-color: #002F2F;
+    background-color: #EFECCA;
 }
 
 .dayName {
@@ -78,4 +78,28 @@ body{
 .statusWeather{
     font-family: 'Domine', serif;
     font-size: 30px;
+}
+
+.backButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border: none;
+    font-family: Montserrat, Arial Black, sans-serif;
+    color : black;
+    font-size: 20px;
+    background-color: #eb9316;
+}
+
+.backButton:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border: none;
+    font-family: Montserrat, Arial Black, sans-serif;
+    color : #EFECCA;
+    font-size: 20px;
+    background-color: #002b36;
 }
