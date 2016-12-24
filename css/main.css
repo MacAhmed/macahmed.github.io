@@ -91,3 +91,7 @@
 .post2border{
     border-right: #cb4b16 thin solid;
 }
+
+.projectName{
+    font-size: 40px;
+}
