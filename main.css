@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #151718;
+
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+main{
+  padding-top: 40px;
+  font-family: 'PT Mono', monospace;
+  color: white;
+}
+
+main a{
+  text-decoration: none;
+  color: #a6e227;
+}
+
+main a:hover{
+  background-color: #1c1f20;
+}
+
+.text{
+  line-height: 150%;
+}
+
+.main_heading{
+  color: #74d52e;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.sub_heading{
+  color: #e9f8d6;
+  font-style: italic;
+  font-family: 'Ubuntu Mono', monospace;
+  padding-top: 20px;
+}
+
+canvas{
+  position: absolute;
+  width: 40%; height: 100%;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -100000;
+}
+
+.subject_heading{
+  color: #ea2672;
+  font-style: italic;
+  font-family: 'Ubuntu Mono', monospace;
+  padding-top: 20px;
+}
+
+.main_header{
+  padding-top: 150px;
+  padding-bottom: 20px;
+}
+
+.sub-sub-heading{
+  padding-top: 10px;
+  color: #e9f8d6;
+  font-size: 20px;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.skills_list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills_list li{
+  display: inline-block;
+  color: #54d9e1;
+  padding-top: 10px;
+}
+
+.skills_list li:after { content: " \00b7"; }
+
+.skills_list li:last-child:after { content: none;}
+
+.experience_list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience_list li{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.time{
+  float: right;
+  color: #e6ce43;
+  font-style: normal;
+}
+
+.company_name{
+  font-family: 'Cutive Mono', monospace;
+  font-size: 20px;
+  font-style: italic;
+  color: #54d9e1;
+  font-weight: bold;
+}
+
+.experience-list-items{
+  padding-top: 10px;
+}
+
+.experience-list-items li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.position_title{
+  color: #ea2672;
+  padding-top: 5px;
+}
+
+.color-position{
+  color: #e6ce43;
+  font-weight: bold;
+}
+
+footer{
+  padding-bottom: 150px;
+}
