@@ -1,0 +1,28 @@
+.navLink{
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    font-size: 20px;
+    color: #F1AB27;
+    display: inline-block;
+
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+
+    letter-spacing: 3px;
+}
+
+.navLink:hover:not([aria-current="page"]){
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: #140098;
+    background-color: #F1AB27;
+}
+
+.navLink_active{
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: #140098;
+    color: #E091F1;
+    font-style: italic;
+    font-weight: bold;
+}
