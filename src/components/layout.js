@@ -26,20 +26,21 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <footer style={{
+        padding: `16px`,
+      }}>
+        <p style={{
+          color: `white`,
+          margin: `0`,
+          padding: `0`,
+          fontFamily: `Source Code Pro`,
+          fontStyle: `normal`,
+          textAlign: `right`
+        }}>2020 - Mac Ahmed</p>
+      </footer>
     </>
   )
 }
