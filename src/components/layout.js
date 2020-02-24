@@ -25,19 +25,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
+      <div className="hack">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div>
+          <main>{children}</main>
+        </div>
+        <hr></hr>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <span style={{
+            float: `right`,
+            color: `#586e75`
+          }}>Maktoom Ahmed - 2020</span>
         </footer>
       </div>
     </>
