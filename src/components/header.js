@@ -10,14 +10,6 @@ const Header = ({ siteTitle }) => (
   }}>
       <p>
         <Link className="navigation" to="/">{siteTitle}</Link>
-        - 
-        <Link className="navigation" to="/blog">Blog</Link>
-        - 
-        <Link className="navigation" to="/project">Project</Link>
-        - 
-        <Link className="navigation" to="/resume">Resume</Link>
-        - 
-        <Link className="navigation" to="/contact">Contact</Link>
       </p>
   </header>
 )
