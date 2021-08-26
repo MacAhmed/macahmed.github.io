@@ -1,8 +1,6 @@
 name: Update Year in license
 
-on:
-  schedule:
-    - cron: "0 3 1 1 *" # 03:00 AM on January 1
+on: workflow_dispatch
 
 jobs:
   update-license-year:
@@ -14,3 +12,5 @@ jobs:
       - uses: FantasticFiasco/action-update-license-year@v2
         with:
           token: ${{ secrets.ACTION_TOKEN }}
+          path: src/**/*.js
+          transform: (?<=Maktoom Ahmed )(?<from>\d{4})?-?(\d{4})?
